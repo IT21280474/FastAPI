@@ -2,13 +2,13 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-
+3
 
 
 @app.get('/')
 def index():
-    return {'data':{'name':'Malith'}}
+    return {'data':'Blog List'}
 
-@app.get('/about')
-def about():
-    return {'data':{'about page'}}
+@app.get('/blog/id')
+def show():
+    return {'data': id}
